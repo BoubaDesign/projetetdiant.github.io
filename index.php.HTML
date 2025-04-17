@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site de Consultation des Notes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f8f9fa;
+    }
+
+    header {
+      background-color: #ffffff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ccc;
+    }
+
+    header h1 {
+      color: #004080;
+      margin: 0;
+    }
+
+    .btn-connect {
+      background-color: #28a745;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .hero {
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+    }
+
+    .sidebar {
+      width: 200px;
+      background-color: #0056b3;
+      color: white;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 6rem;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 1rem;
+      color: white;
+      text-decoration: none;
+    }
+
+    .sidebar a:hover {
+      background-color: #004080;
+    }
+
+    .main {
+      margin-left: 200px;
+      padding: 2rem;
+    }
+
+    .card {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    th,
+    td {
+      padding: 0.75rem;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f1f1f1;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <h2> BIENVENUE</h2>
+    <a class="btn-connect" href="form login.html">Se connecter</a>
+  </header>
+
+  <div class="hero">
+    <h1>Consultez Vos Notes d’Examen</h1>
+    <p>Connectez-vous pour accéder à vos notes et informations de cours.</p>
+    <a class="btn-connect" href="form login.html">Se connecter</a>
+  </div>
+
+  <div class="sidebar">
+    <a href="#dashboard">Tableau de bord</a>
+    <a href="#matieres">Matières</a>
+    <a href="#notes">Notes</a>
+  </div>
+
+  <div class="main">
+    <div class="card" id="dashboard">
+      <h3>Tableau de bord</h3>
+      <p>Bienvenue !</p>
+      <h4>Épreuves</h4>
+      <table>
+        <thead>
+          <tr>
+            <th>Matière</th>
+            <th>Note</th>
+            <th>Commentaire</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Biologie</td>
+            <td>A</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Histoire</td>
+            <td>B+</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Mathématiques</td>
+            <td>A–</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>

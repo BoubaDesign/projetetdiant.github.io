@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connexion</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #004080;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label, select, input {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    input, select {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #28a745;
+      color: white;
+      padding: 0.5rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Connexion</h2>
+    <form action="login.php" method="post">
+      <label for="type_compte">Type de compte :</label>
+      <select name="type_compte" id="type_compte" required>
+        <option value="admin">Administrateur</option>
+        <option value="etudiant">Étudiant</option>
+      </select>
+
+      <label for="identifiant">Email (admin) ou Matricule (étudiant) :</label>
+      <input type="text" name="identifiant" id="identifiant" required>
+
+      <label for="mot_de_passe">Mot de passe :</label>
+      <input type="password" name="mot_de_passe" id="mot_de_passe" required>
+      <button type="submit">Se connecter</button>
+
+      
+    </form>
+  </div>
+</body>
+</html>
